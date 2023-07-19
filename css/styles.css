@@ -52,8 +52,6 @@ body {
 }
 
 .header {
-    margin-top: 24px;
-    margin-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
 
 }
@@ -61,7 +59,7 @@ body {
 .header-container {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+
 }
 
 .header-navigation {
@@ -142,6 +140,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
+    display: block;
     letter-spacing: 0.02em;
     text-decoration: none;
     list-style: none;
@@ -307,8 +306,6 @@ body {
 
 .soul-container {
     text-align: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .soul-title {
@@ -321,31 +318,40 @@ body {
     text-align: center;
     margin-bottom: 72px;
 }
+
 .doing-soul {
     background-color: #F4F4FD;
     text-align: center;
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
 .text-container {
     padding: 32px 16px;
 }
+
+.sec-title-list {}
+
 .title-link {
     display: flex;
     gap: 24px;
+
 }
+
 .title-list {
     flex-basis: calc((100% - 72px)/4);
-    padding-bottom: 32px;
     border-radius: 0px 0px 4px 4px;
     background: var(--white, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
 }
 
 .text-container {
     text-align: center;
     border: 1px solid #e7e9fc;
+    padding: 32px 0;
 }
+
 .link-title {
     color: var(--navyblue-color);
     font-size: 20px;
@@ -354,6 +360,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+
 }
 
 .link-text {
@@ -411,6 +418,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+
+
 }
 
 .filter {
@@ -423,7 +432,6 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 72px;
-    margin-top: 96px;
     gap: 24px;
     color: var(--navyblue-color);
 }
@@ -453,7 +461,6 @@ body {
     border: 1px solid #e7e9fc;
     border-radius: 4px;
     margin: 0 auto;
-    min-width: 169px;
 
 }
 
@@ -476,6 +483,9 @@ body {
     display: flex;
     gap: 48px 24px;
     flex-wrap: wrap;
+
+
+
 }
 
 .foto-link {
@@ -496,8 +506,9 @@ img {
 
 .foto-link-old h2,
 .foto-link-old p {
-    padding-left: 16px;
     min-width: 100%;
+
+
 }
 
 .foto-team {
@@ -527,10 +538,4 @@ img {
     letter-spacing: 0.02em;
     color: var(--secondary-black);
     text-decoration: none;
-    margin-bottom: 32px;
 }
-
-
-
-
-animate__animated animate__bounce
