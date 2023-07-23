@@ -8,7 +8,13 @@ element.style {}
 
 head {
     display: none;
-}
+    background-color: #2E2F42;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg.jpeg);
+        background-repeat: no-repeat;
+    }
+
 
 :root {
     --primari-font: "Raleway", sans-serif;
