@@ -314,6 +314,9 @@ background-position: center;
     flex-basis: calc((100% - 72px)/4);
   
 }
+.hid-icon-container {
+    
+}
 .hid-link-icon {
             display: flex;
             align-items: center;
