@@ -769,6 +769,9 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     color: var(--secondary-white);
     
 }
+.foto-portfolio {
+    
+}
 .foto-link:hover,
 .foto-link:focus  {
     transform: translateY(0%);
@@ -826,9 +829,22 @@ img {
     text-decoration: none;
 }
 .backdrop.is-hidden.modal {
-    transform: translate(-50%, -50%) scale(0);
+position: fixed;
+top: 0;
+left: 0;
+height: 100%;
+background-color: rgba(46, 47, 66, 0.4);
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transform: translate(-50%, -50%) scale(0);
+opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.is-hidden{
+   
 }
 .modal {
+
 width: 408px;
 min-height: 584px;
 border-radius: 4px;
@@ -839,25 +855,33 @@ left: 50%;
 top: 50%;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 transform:translate(-50%, -50%) scale(1);
+display: flex;
+justify-content: center;
+align-items: center;
 }
+
 .close-icon {
-   
     color: var(--accent-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 8px;
+    height: 8px;
+
 }
 .modal-close-btn {
    
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     position: absolute;
     border-radius: 50%;
     top: 24px;
     right: 24px;
     padding: 0px;
-    border: 1px solid var(--light-stale);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     background: transparent;
     background-color: #e7e9fc;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+border 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 .modal-close-btn:hover,
