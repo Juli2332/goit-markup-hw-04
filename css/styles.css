@@ -322,16 +322,11 @@ background-position: center;
         background-color: #f4f4fd;
         border-radius: 4px;
         margin-bottom: 8px;
+        height: 112px;
+        width: 264px;
 }
-.hid-link-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 8px;
-            border-radius: 4px;
-            width: 264px;
-            height: 112px;
-            background: var(--cloud, #F4F4FD);
+.hid-link-icon {      
+   background: var(--cloud, #F4F4FD);
            
 }
 
