@@ -536,11 +536,12 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 .nav-container {
    display: flex;
    align-items: baseline;
-    width: 100%;
+ 
    
 } 
 .footer-logotex {
 margin-right: 120px;
+width: 264px;
 }
 
 .footer-list {
@@ -576,8 +577,10 @@ margin-right: 120px;
         letter-spacing: 0.32px;
 }
 .footer-icon {
-    margin-right: 120px;
+    margin-right: 0;
     gap: 40px;
+    display: block;
+    margin-bottom: 18px;
 
     
 
@@ -599,7 +602,7 @@ gap: 16px;
 .footer-menu-icon:hover,
 .footer-menu-icon:focus {
     background-color: var(--beg-button-color);
-     color: #31d0aa;
+   
 }
 
 .footer-icon-text {
@@ -622,6 +625,8 @@ height: 40px;
 background-color: #4D5AE5;
 align-items: center;
 justify-content: center;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-link:hover,
 .footer-icon-link:focus {
@@ -642,23 +647,10 @@ justify-content: center;
 
 }
 .footer-buttom-icon {
-
-    background-color: var(--iris-color);
-    padding: 16px 32px;
-    margin: 0 auto;
-    display: block;
-    border: none;
-    min-width: 169px;
-    border-radius: 4px;
-    width: 24px;
-    height: 24px;
-    fill: var(--secondary-white);
     fill: #f4f4fd;
-    transition: fill 500ms linear;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+    
 }
-
 
 .customers-buttom-icon:is(:hover, :focus) {
     fill: currentColor;
