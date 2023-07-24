@@ -316,7 +316,12 @@ background-position: center;
   
 }
 .hid-icon-container {
-    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
 }
 .hid-link-icon {
             display: flex;
