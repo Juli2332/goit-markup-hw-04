@@ -496,12 +496,11 @@ height: 40px;
     background-color: #404bbf;
 }
 .customers {
-    padding: 120px 0;
+    
       
 }
 .customers-container {
-     margin-right: auto;
-     margin-left: auto;
+    padding: 120px 0;
 }
 .customers-title {
         font-size: 36px;
