@@ -497,11 +497,10 @@ height: 40px;
 }
 .customers {
     padding: 120px 0;
-      margin-bottom: 72px;
+      
 }
 .customers-container {
-     margin-right: auto;
-     margin-left: auto;
+    
 }
 .customers-title {
         font-size: 36px;
@@ -511,7 +510,7 @@ height: 40px;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         text-align: center;
-       
+    margin-bottom: 72px;
         margin-top: 120px;
         color: var(--navyblue-color);      
 }
