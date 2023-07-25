@@ -868,7 +868,9 @@ opacity: 0;
     pointer-events: none;
 }
 .is-hidden{
-   
+  opacity: 0; 
+  visibility: hidden;
+  pointer-events: none;
 }
 .modal {
 
@@ -911,7 +913,12 @@ align-items: center;
 border 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
-.modal-close-btn:hover,
+.modal-close-btn:hover {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+}
+
 .modal-close-btn:focus {
     background-color: #404bbf;
     border: none;
