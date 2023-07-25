@@ -876,9 +876,7 @@ opacity: 0;
     pointer-events: none;
 }
 .is-hidden{
-display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 .modal {
 
@@ -893,7 +891,9 @@ left: 50%;
 top: 50%;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 transform:translate(-50%, -50%) scale(1);
-
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .close-icon {
@@ -904,7 +904,9 @@ transform:translate(-50%, -50%) scale(1);
 
 }
 .modal-close-btn {
-   
+display: flex;
+align-items: center;
+justify-content: center;
     width: 24px;
     height: 24px;
     position: absolute;
@@ -918,7 +920,7 @@ transform:translate(-50%, -50%) scale(1);
     background-color: #e7e9fc;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
 border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal-close-btn:hover {
     background-color: #404bbf;
