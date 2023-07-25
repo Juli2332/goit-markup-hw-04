@@ -56,8 +56,7 @@ body {
 .container {
     width: 100%;
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+   
     margin: 0 auto;
 }
 
@@ -227,7 +226,7 @@ left: 0;
     background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
-    max-width: 1440px;
+   
     background-repeat: no-repeat;
 background-position: center;
 
