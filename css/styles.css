@@ -230,7 +230,7 @@ left: 0;
     max-width: 1440px;
     background-repeat: no-repeat;
 background-position: center;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .section-container {
@@ -251,6 +251,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 auto;
     text-align: center;
     margin-bottom: 48px;
+    transition: background-color 250ms
+     cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solution-button {
@@ -275,7 +277,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .solution-button:hover,
 .solution-button:focus {
     background-color: var(--hover-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .readers {
