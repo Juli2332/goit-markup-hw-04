@@ -783,8 +783,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
 }
-
-.foto-img-box {
+.foto-img-box.text {
     position: relative;
     overflow: hidden;
 }
@@ -806,14 +805,18 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--secondary-white);
     overflow: auto;
 }
+.foto-portfolio {
 
+}
+ 
 .foto-link:hover .foto-overlay,
 .foto-link:focus .foto-overlay {
 transform: translateY(100%);
 }
 
 .foto-link-old {
-    width: calc((100% - 48px) / 3); 
+    width: calc((100% - 48px) / 3);
+    
 }
 
 img {
@@ -824,6 +827,7 @@ img {
 .foto-link-old h2,
 .foto-link-old p {
     min-width: 100%;
+
 
 }
 
@@ -836,6 +840,7 @@ img {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
     margin-bottom: 8px;
     border-top: none;
    
