@@ -807,7 +807,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 .foto-link:hover .foto-overlay,
 .foto-link:focus .foto-overlay {
-
+transform: translateY(0%);
 }
 
 .foto-link-old {
