@@ -766,15 +766,20 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .foto-link {
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
-    
+   
 }
 
 
-.foto-link:hover,
-.foto-link:focus {
+.foto-link:hover {
     transform: translateY(0%);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
+}
+
+.foto-link:focus {
+    transform: translateY(0%);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
 }
 .foto-img-box {
     position: relative;
@@ -809,7 +814,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 .foto-overlay:hover,
 .foto-overlay:focus {
- transform: translateY(0%);
+
 }
 
 .foto-link-old {
@@ -862,7 +867,7 @@ img {
     color: var(--secondary-black);
     text-decoration: none;
 }
-.backdrop.is-hidden.modal {
+.backdrop {
 position: fixed;
 top: 0;
 left: 0;
@@ -871,19 +876,18 @@ width: 100%;
 background-color: rgba(46, 47, 66, 0.4);
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 transform: translate(-50%, -50%) scale(0);
-opacity: 0;
-visibility: hidden;
-pointer-events: none;
+
     
 }
 .is-hidden {
-
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
 }
 .backdrop.is-hidden.modal {
-
+transform: translate(-50%, -50%) scale(0);
 }
 .modal {
-    
 width: 408px;
 min-height: 584px;
 border-radius: 4px;
