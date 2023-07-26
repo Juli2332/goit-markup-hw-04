@@ -862,7 +862,7 @@ img {
     color: var(--secondary-black);
     text-decoration: none;
 }
-.backdrop {
+.backdrop.is-hidden.modal {
 position: fixed;
 top: 0;
 left: 0;
@@ -871,18 +871,19 @@ width: 100%;
 background-color: rgba(46, 47, 66, 0.4);
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 transform: translate(-50%, -50%) scale(0);
-
-    
-}
-.is-hidden {
 opacity: 0;
 visibility: hidden;
 pointer-events: none;
+    
+}
+.is-hidden {
+
 }
 .backdrop.is-hidden.modal {
-transform: translate(-50%, -50%) scale(0);
+
 }
 .modal {
+    
 width: 408px;
 min-height: 584px;
 border-radius: 4px;
