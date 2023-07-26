@@ -879,11 +879,7 @@ opacity: 0;
 visibility: hidden;
 pointer-events: none;
 }
-.backdrop.is-hidden.modal:is(:hover, :focus) {
-    background-color: #404bbf;
-    border: none;
-    fill: #ffffff;
-
+.backdrop.is-hidden.modal {
 transform: translate(-50%, -50%) scale(0);
 }
 .modal {
