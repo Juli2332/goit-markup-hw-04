@@ -162,7 +162,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     list-style: none;
     padding-top: 24px;
     padding-bottom: 24px;
-    color: #404bbf;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -177,6 +176,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 .current {
     position: relative;
+    color: #404bbf;
 }
 .current::after {content: "";
 width: 100%;
@@ -711,6 +711,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--secondary-white);
     color: var(--iris-color);
 }
+.filter-clok:hover,
+.filter-clok:focus {
+
+}
 
 .filter-link {
     font-family: inherit;
@@ -730,6 +734,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+
 }
 
 .filter-link:hover,
@@ -737,9 +743,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--hover-color);
     color: var(--white);
     border: 1px solid transparent;
+    
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
      0px 2px 1px 0px rgba(0, 0, 0, 0.08),
-      0px 3px 1px 0px rgba(0, 0, 0, 0.1);   
+      0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    
 }
 
 .foto-container {
@@ -754,13 +762,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     gap: 48px 24px;
     flex-wrap: wrap;
     list-style: none;
+
 }
 
 .foto-link {
 transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
-    
+   
 }
+
 
 .foto-link:hover {
     transform: translateY(0%);
@@ -777,8 +787,9 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
     border-top: none;
-    padding: 32px 16px;
     border: 1px solid #e7e9fc;
+
+
 }
 
 .foto-img-box.text {
@@ -802,15 +813,18 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--secondary-white);
     
 }
+.foto-portfolio {
 
-.foto-overlay:hover,
-.foto-overlay:focus {
-
+}
+ 
+.foto-link:hover .foto-overlay,
+.foto-link:focus .foto-overlay {
+transform: translateY(100%);
 }
 
 .foto-link-old {
     width: calc((100% - 48px) / 3);
-    transform: translateY(0%);
+    
 }
 
 img {
@@ -821,6 +835,8 @@ img {
 .foto-link-old h2,
 .foto-link-old p {
     min-width: 100%;
+
+
 }
 
 .foto-team {
@@ -832,9 +848,12 @@ img {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
     margin-bottom: 8px;
     border-top: none;
    
+        
+
 }
 
 .text {
