@@ -846,7 +846,7 @@ img {
 color: var(--secondary-black);
     margin-bottom: 8px;
     border-top: none;
-
+   
 }
 .text {
     font-size: 16px;
@@ -855,7 +855,6 @@ color: var(--secondary-black);
     color: var(--secondary-black);
     text-decoration: none;
 }
-
 .backdrop {
 position: fixed;
 top: 0;
@@ -866,7 +865,8 @@ background-color: rgba(46, 47, 66, 0.4);
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 transform: translate(-50%, -50%) scale(0);
- 
+
+    
 }
 .is-hidden {
 opacity: 0;
@@ -886,9 +886,7 @@ left: 50%;
 top: 50%;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 transform: translate(-50%, -50%) scale(1);
-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 
-0px 1px 3px 0px rgba(0, 0, 0, 0.12), 
-0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .close-icon {
@@ -913,10 +911,9 @@ justify-content: center;
     cursor: pointer;
     background: transparent;
     background-color: #e7e9fc;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-     
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .modal-close-btn:is(:hover, :focus) {
