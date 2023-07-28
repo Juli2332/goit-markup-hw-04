@@ -759,7 +759,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     gap: 48px 24px;
     flex-wrap: wrap;
-    list-style: none;
+  
 
 }
 
@@ -786,7 +786,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .foto-img-box.foto-text {
     position: relative;
     overflow: hidden;
-color: var(--secondary-white);
+
     
 }
 .foto-img-box {
