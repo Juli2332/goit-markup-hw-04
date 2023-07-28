@@ -817,7 +817,7 @@ transform: translateY(0%);
 
 .foto-link-old {
     width: calc((100% - 48px) / 3);
-    color: var(--secondary-white);
+    
 }
 
 img {
