@@ -431,6 +431,7 @@ background-position: center;
 }
 
 .link-text {
+    margin-bottom: 8px;
     color: var(--secondary-black);
     font-size: 16px;
     font-style: normal;
@@ -470,7 +471,8 @@ background-color: #4d5ae5;
 align-items: center;
 fill: var(--secondary-white);
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+width: 100%;
+height: 100%;
 }
    
     
@@ -487,8 +489,7 @@ background-color: #404bbf;
 
 .our-team-icon {
 fill: var(--secondary-white);
-width: 40px;
-height: 40px;
+
 
 
 }
@@ -499,9 +500,7 @@ height: 40px;
     padding: 120px 0;
       
 }
-.customers-container {
-     
-}
+
 .customers-title {
         font-size: 36px;
         font-weight: 700;
@@ -514,49 +513,48 @@ height: 40px;
 }
   .customers-list {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
         gap: 24px;   
   } 
+  
+
   .customers-buttom {
 width: calc((100% - 120px) / 6);
   height: 88px;
 } 
-  .customers-buttom-icon {
- fill: var(--light-stale);
- width: 104px;
- height: 56px;
- fill: #8e8f99;
-transition: fill 500ms linear;
-fill: currentColor;
-
-  }
-  .customers-buttom-icon:is(:hover,:focus) {
-    fill: currentColor;
-  }
+ 
+  
   .customers-buttom-link {
-    border: 1px solid var(--light-stale);
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--light-stale);
+    width: 100%;
+    height: 100%; 
     border-radius: 4px;
-    padding: 16px 32px;
     color: var(--light-stale);
-    fill: var(--light-stale);
+   
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .customers-buttom-link:hover {
-    border-color: #404bbf ;
-    color: #404bbf;
+
+   .customers-buttom-link:hover {
+    border-color: var(--hover-color);
+    color: var(--hover-color);
+   
   }
   .customers-buttom-link:focus {
-        border-color: #404bbf;
-        color: #404bbf;
+        border-color: var(--hover-color);
+        color: var(--hover-color);
   }
+  .customers-buttom-icon {
+fill: currentColor
+  }
+
+.customers-buttom-icon:is(:hover, :focus) {
+    fill: var(--hover-color);
+    
+}
+
 .footer-navigation {
     background: var(--navyblue, #2e2f42);
     padding-top: 100px;
@@ -601,18 +599,17 @@ width: 264px;
 
 }
 .footer-text {
-
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.32px;
+    color: #f4f4fd;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
 }
 .footer-icon {
     margin-right: 0;
     gap: 40px;
     display: block;
-    margin-bottom: 18px;
-
+    
     
 
 }
@@ -620,14 +617,7 @@ width: 264px;
 .footer-menu-icon {
 display: flex;
 gap: 16px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 50%;
-   
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .footer-menu-icon:hover,
@@ -637,19 +627,19 @@ gap: 16px;
 }
 
 .footer-icon-text {
+    
     color: var(--secondary-white);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    gap: 16px;
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-link {
-    border: 1px solid #8e8f99;
-        display: flex;
-        border-radius: 50%;
-        color: var(--light-stale);
+display: flex;
+border-radius: 50%;
+color: var(--light-stale);
 width: 40px;
 height: 40px;
 background-color: #4D5AE5;
