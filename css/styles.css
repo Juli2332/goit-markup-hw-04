@@ -529,9 +529,9 @@ width: calc((100% - 120px) / 6);
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: var(--light-stale);
+   color: var(--light-stale);
     border: 1px solid var(--light-stale);
-    color: #404bbf;
+
     border-radius: 4px;
       
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
